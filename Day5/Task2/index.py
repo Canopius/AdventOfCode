@@ -32,6 +32,22 @@ def main():
 			for Number in range(Small, Big + 1):
 				AllCoords.append(str(Number) + "," + Content[0][1])
 
+		else:
+			# Diagonal
+			xDir = 1 # 1 : Positive, -1 : Negative 
+			yDir = 1 # 1 : Positive, -1 : Negative 
+
+			Length = abs(int(Content[0][0]) - int(Content[1][0])) + 1
+
+			if Content[0][0] > Content[1][0]:
+				xDir = -1
+			
+			if Content[0][1] > Content[1][1]:
+				yDir = -1 
+
+			for i in range(0, Length):
+				AllCoords.append(str(int(Content[0][0]) + (xDir * i)) + "," + str(int(Content[0][1]) + (yDir * i)))
+
 
 	NumberRecourances = Counter(AllCoords)
 	Total = 0
