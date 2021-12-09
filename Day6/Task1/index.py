@@ -1,4 +1,4 @@
-Days = 80
+Days = 256
 FishObjects = []
 
 class LanternFish:
@@ -28,13 +28,7 @@ def Main():
 		FishObjects.append(NewFish)
 
 	for i in range(0, Days):
-
-		#print("\n---------------", len(FishObjects))
-		#foo = []
-		#for _, Fishy in enumerate(FishObjects):
-		#	foo.append(Fishy.Counter)
-		#print(foo)
-
+		print("Day %i" % (i))
 		for i in range(0, len(FishObjects)):
 			FishObjects[i].Age()
 
