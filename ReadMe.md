@@ -1,0 +1,2 @@
+This repository includes all of the code that I have written for AoC 2021
+Not all of the code will be complete or perfectly efficient - I was aiming for speed over accuracy and maintainabilty of my code.
